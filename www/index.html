@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=Content-Security-Policy content="default-src * 'self' 'unsafe-inline' 'unsafe-eval' data: gap: content:"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no,minimal-ui,viewport-fit=cover"><meta name=apple-mobile-web-app-capable content=yes><meta name=apple-mobile-web-app-status-bar-style content=default><meta name=theme-color content=#2196f3><meta name=format-detection content="telephone=no"><meta name=msapplication-tap-highlight content=no><title>Debit</title><link href=https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet><link href=https://cdn.bootcss.com/framework7/2.1.3/css/framework7.css rel=stylesheet><style>.spinner {
+  width: 60px;
+  height: 60px;
+  background-color: #5784e6;
+
+  margin: 100px auto;
+  -webkit-animation: rotateplane 1.2s infinite ease-in-out;
+  animation: rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+  } 50% {
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+  } 100% {
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}</style><link href=static/css/app.6f759eb7ddeea50ad95f79a3e6375c7c.css rel=stylesheet></head><body><div id=app><div class=spinner></div></div><script type=text/javascript src=static/js/manifest.d0214518fd85f980eeee.js></script><script type=text/javascript src=static/js/vendor.f3a286c9f40c4f69ad11.js></script><script type=text/javascript src=static/js/app.8a18cc8fb0bcf00a5f6b.js></script></body></html>

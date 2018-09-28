@@ -1,0 +1,46 @@
+	/**
+	 * 设置
+	 */
+	 1、设置conf.inc.php文件，填写相关key等信息
+	 2、controller载入OSS操作类  $this->load->library('oss/alioss');
+	 3、然后，看下面吧~
+	 
+	 
+	/**
+	 * Service相关操作
+	 */
+	list_bucket();//获取bucket列表
+	
+	/**
+	 * Bucket相关操作
+	 */
+	create_bucket($bucket);//创建
+	delete_bucket($bucket);//删除
+	get_bucket_acl($bucket);//获取bucket ACL
+	set_bucket_acl($bucket,$acl);//设置bucket ACL
+	
+	/**
+	 * Object相关操作
+	*/
+	list_object($bucket);//获取object列表
+	create_object_dir($bucket,$dir);//创建目录
+	
+	upload_file_by_content($bucket,$object);//通过内容上传文件
+	upload_file_by_file($bucket,$object,$file_path);//通过路径上传文件
+	copy_object($from_bucket,$from_object,$to_bucket,$to_object,$options = NULL);//拷贝Object
+	get_object_meta($bucket,$object);//获得object的meta信息
+	delete_object($bucket,$object);//删除object
+	delete_objects($bucket,$objects);//批量删除objects
+	get_object($bucket,$object);//获得Object内容
+	is_object_exist($bucket,$object);//检测Object是否存在
+	
+	create_mpu_object($bucket, $object);//multipart上传统一封装，从初始化到完成multipart，以及出错后中止动作
+	
+	upload_by_dir($bucket,$dir);//通过Multi-Part方式上传整个目录，其中的object默认为文件名
+	
+	batch_upload_file($options);//通过multi-part上传整个目录(新版)
+	
+	/**
+	 * 外链url相关
+	*/
+	get_sign_url($bucket,$object);//带签名的url相关

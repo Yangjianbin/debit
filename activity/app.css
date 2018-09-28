@@ -1,0 +1,154 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+.clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfix{zoom:1}
+img{
+    max-width: 100%;
+    max-height:100%;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    font-size:14px;
+}
+.section1{
+    background: #000;
+    color:white;
+}
+.section1 .title {
+    color: #ccc;
+    padding: 2px 2px 2px 10px;
+}
+.section1 .desc {
+    color: #dddddd;
+    padding: 15px 15px 2px 15px;
+    border-top: 3px solid #8c000b;
+}
+.section1 .desc p{
+    margin-bottom: 20px;
+}
+.section1 .thumbs {
+
+}
+.section1 .thumbs  img{
+    width: 30%;
+    background: #fff;
+    padding: 4px;
+}
+.section1 .terms {
+    text-align: center;
+    color:#aaa;
+    font-size: 0.9em;
+}
+.bg{
+    width: 100%;
+}
+.tabs{
+    padding-bottom: 50px;
+}
+.tabs .tab-item{
+
+}
+.tab-item li{
+    width: 33%;
+    line-height: 30px;
+    text-align: center;
+    float: left;
+    font-size:0.8em;
+    cursor: pointer;
+}
+.tab-item li.active{
+    color: #ff3f09;
+    border-bottom: 3px solid #ff3f09;
+}
+.tab-content .tab-content-item{
+    display: none;
+}
+.tab-content .tab-content-item.active {
+    display: block;
+}
+
+.item1 li{
+    width: 30%;
+    float: left;
+    margin:1.6%;
+}
+.item1 .rank {
+    position: relative;
+}
+.item1 .rank .brand {
+    border-radius: 6px;
+    background: #ff4100;
+    color:#ccc;
+    position: absolute;
+    bottom: 10px;
+    right:3px;
+    font-size:0.5em;
+    padding:0px 6px;
+}
+.item1 .rank .brand img{
+    height:10px;
+}
+.item1 .rank .rank1{
+    position: absolute;
+    left:50%;
+    top:-10px;
+    width: 40px;
+    transform: translateX(-45%);
+
+}
+.item1 li img{
+    border-radius: 4px;
+}
+.item2{
+    border-top:1px solid #ddd;
+}
+.item2 li{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ddd;
+    padding: 1px 0px;
+    margin-top: 5px;
+}
+.item2 li>div{
+    float: left;
+}
+.item2 li .item2-1{
+    width: 10%;
+    line-height: 60px;
+    text-align: center;
+}
+.item2 li .item2-2{
+    width: 25%;
+}
+.item2 li .item2-2 img{
+    height: 60px;
+}
+.item2 li .item2-3{
+    width: 35%;
+}
+.item2 li .item2-4{
+    line-height: 60px;
+    width: 30%;
+}
+
+.article{
+    padding:20px 5px ;
+    color:#555;
+    font-size:0.8em;
+}
+.join-btn{
+    color: #ffffff;
+    text-align: center;
+    font-size:1.2em;
+    background-color: #ff4400;
+    display: block;
+    text-decoration: none;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    padding: 5px 0px;
+}
