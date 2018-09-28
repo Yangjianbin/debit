@@ -447,7 +447,7 @@ AND c.`Status` = 1";
             //TODO
         }
         $sql .= ' GROUP BY a.DebitId ';
-        $sql .= ' order by redStar desc, greenStar desc,a.DebitId desc limit 100';
+        $sql .= ' order by redStar desc, greenStar desc,a.DebitId desc limit 10000';
         $query = $this->Common_model->query($sql);
         $res = $query->result();
 
