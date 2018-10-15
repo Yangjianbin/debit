@@ -31,7 +31,7 @@ $menu = $this->session->menu;
                             <?php foreach ($menu as $kk => $vv): ?>
                                 <?php if($vv['pid'] == $v['id']):?>
                                 <li class="<?= site_url($vv['url']) == current_url() ? 'current' : '' ?>">
-                                    <a href="<?= site_url($vv['url']) ?>"><?= $vv['title'] ?></a>
+                                    <a <?= !strstr($vv['url'], 'http') ? '' : 'target="_blank"' ?> href="<?= !strstr($vv['url'], 'http') ? site_url($vv['url']) : $vv['url'] ?>"><?= $vv['title'] ?></a>
                                 </li>
                                 <?php endif;?>
                             <?php endforeach; ?>

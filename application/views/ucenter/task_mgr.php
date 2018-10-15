@@ -168,7 +168,7 @@ $this->load->view('admin/footer');
     }
 
     function taskmgrdel(id) {
-        layer.confirm('确认要删除吗？', function (index) {
+        layer.confirm('Confirm Delete？', function (index) {
             var deleteUrl = "<?=site_url('ucenter/taskmgrdel')?>" + '/' + id;
             $.ajax({
                 url: deleteUrl,

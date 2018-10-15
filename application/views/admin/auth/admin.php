@@ -159,7 +159,8 @@ $this->load->view('admin/footer');
             "sProcessing": "正在加载中......",
             "sLengthMenu": "每页显示 _MENU_ 条记录",
             "sZeroRecords": "对不起，查询不到相关数据！",
-            "sEmptyTable": "表中无数据存在！",
+            "sInfoEmpty":"No data",
+            "sEmptyTable": "No data in the report",
             "sInfo": "current display lasts for _START_-_END_ records,in total there will be _MAX_ records",
             "sInfoFiltered": "数据表中共为 _MAX_ 条记录",
             "sSearch": "搜索",
@@ -183,7 +184,7 @@ $this->load->view('admin/footer');
     }
 
     function admin_start(obj, id) {
-        layer.confirm('确认要启用吗？', function (index) {
+        layer.confirm('Confirm Delete？', function (index) {
             var deleteUrl = "<?=site_url('auth/adminStart')?>" + '/' + id;
             console.log(deleteUrl)
             $.ajax({

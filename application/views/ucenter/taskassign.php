@@ -54,6 +54,7 @@ $this->load->view('admin/side_menu');
                             <option value="">status</option>
                             <option value="0">UNDONE</option>
                             <option value="1">DONE</option>
+                            <option value="2">PENDING</option>
                         </select>
                     </span>
                     <span class="select-box inline">
@@ -229,7 +230,7 @@ $this->load->view('admin/footer');
     }
 
     function taskmgrdel(id) {
-        layer.confirm('确认要删除吗？', function (index) {
+        layer.confirm('Confirm Delete？', function (index) {
             var deleteUrl = "<?=site_url('ucenter/taskmgrdel')?>" + '/' + id;
             $.ajax({
                 url: deleteUrl,
